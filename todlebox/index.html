@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toddle box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <button onclick='show(sucessmsg)'>sucess</button>
+    <button onclick='show(errormsg)'>error</button>
+    <button onclick='show(invalidmsg)'>invalid</button>
+    
+    <div id="todlebox">
+      
+    </div>
+
+<script >
+ let todelbox=document.getElementById("todlebox");
+ let sucessmsg='<i class="fa-solid fa-check"></i> Sucessfully Submited' 
+ let errormsg=' <i class="fa-solid fa-circle-xmark" ></i>    Please fix the error '
+ let invalidmsg=' <i class="fa-solid fa-triangle-exclamation"></i> Invalid input,Check again'
+function show(msg)
+{
+
+ let tost=document.createElement('div');
+ tost.classList.add('tost')
+ tost.innerHTML=msg;
+ 
+ 
+if(msg.includes("error"))
+{
+ tost.classList.add('error')
+
+}
+if(msg.includes("Invalid"))
+{
+ tost.classList.add('Invalid')
+
+}
+todelbox.appendChild(tost)
+ setTimeout(()=>{
+    tost.remove();
+},5000)
+}
+
+
+
+
+</script>
+<script src="https://kit.fontawesome.com/4f35857545.js" crossorigin="anonymous"></script>
+</body>
+</html>

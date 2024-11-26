@@ -1,0 +1,46 @@
+*
+{
+    margin: 0;
+    padding:0 ;
+}
+body
+{
+background-color: rgb(2, 2, 88);
+
+}
+.cointainer
+{
+    
+    /* margin: 50px auto; */
+    transform: translate(50%,25%);
+    width: 600px;
+    height: 300px;
+    display: flex;
+    
+
+}
+#rightbox
+{
+    margin: 5px;
+    width: 300px;
+    height: 100%;
+    border: dotted red;
+    /* background-color: aqua; */
+}
+#leftbox
+{
+    margin: 5px;
+    height: 100%;
+    width: 300px;
+    border: dotted red;
+    /* background-color: yellow; */
+}
+.list
+{
+    text-align: center;
+    /* height: 40px; */
+    padding: 10px;
+    background-color: pink;
+    margin: 5px;
+    cursor: grab;
+}

@@ -1,0 +1,86 @@
+
+button
+{
+
+    position: relative;
+}
+#todlebox
+{
+    
+   
+    
+    
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+.tost
+{
+    
+    margin: 15px;
+    padding: 15px;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 1px 10px 1px  rgba(0, 0,0,0.5);
+    text-align:start;
+    margin-right: 5px;
+   justify-content: flex-end;
+    transform: translateX(100%);
+    position: relative;
+    animation: anime 0.5s linear forwards ;
+}
+
+@keyframes anime {
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+
+.tost::after
+{
+    content: "";
+    height: 5px;
+    width: 100%;
+    
+position: absolute;
+left: 0;
+bottom: 0;
+   background-color: green;
+   animation: line 5s linear forwards ;
+}
+.tost i
+{
+color: rgb(24, 165, 24);
+margin-right: 15px;
+font-size: large;
+margin-top: 2px;
+
+
+}
+.error i{
+    color: orange;
+}
+.error::after
+{
+    
+    background-color: orange;
+}
+.Invalid i{
+    color: red;
+}
+.Invalid::after
+{
+    
+    background-color: red;
+}
+@keyframes line {
+    100%
+    {
+       width: 0;
+    }
+}
